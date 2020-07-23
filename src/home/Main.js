@@ -10,7 +10,6 @@ import PreOrder from "./sections/PreOrder";
 import FAQ from "./sections/FAQ";
 import GetStarted from "./sections/GetStarted";
 import Features from "./sections/Features";
-import Pricing from "./sections/Pricing";
 
 const Main = () => {
   useEffect(() => {
