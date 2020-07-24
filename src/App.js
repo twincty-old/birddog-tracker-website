@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Route,
-  Switch,
-  BrowserRouter as Router,
-  Redirect,
-} from "react-router-dom";
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import "react-perfect-scrollbar/dist/css/styles.css";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import Scrollbar from "react-perfect-scrollbar";

@@ -1,11 +1,10 @@
 import React from "react";
-import { Grid, Icon, Card } from "@material-ui/core";
+import { Grid, Card } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
-import ProcessorIcon from "../common/icons/ProcessorIcon";
-import SpeedIcon from "../common/icons/SpeedIcon";
-import RAMIcon from "../common/icons/RAMIcon";
 import DoneIcon from "@material-ui/icons/Done";
+import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
+import DashboardIcon from "@material-ui/icons/Dashboard";
 
 const tubeStyle = {
   height: 64,
@@ -63,13 +62,13 @@ const Features = () => {
   const classes = useStyles();
 
   return (
-    <section className="section" id="feature9">
+    <section className="section" id="feature">
       <div className="container">
         <Grid container spacing={4}>
           <Grid item sm={6} xs={12}>
             <div className="flex items-center">
               <h1 className="font-normal text-48 m-0 relative inline-bock text-primary">
-                Best Processor
+                Vendor System
               </h1>
               <div className="flex ml--4">
                 <div className={classes.tube1}></div>
@@ -79,17 +78,21 @@ const Features = () => {
             </div>
 
             <p className="my-10 max-w-400">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua.
+              We are allowing unlimited vendors for free if you have a paid
+              account. Each vendor has it's own dashboard which is different
+              from main user and limited access. Vendor can upload photos/files
+              about properties and can perform only limited actions on this
+              property.
             </p>
             <div>
-              {[1, 2, 3].map((item) => (
+              {[
+                "Unlimited vendors account for paid account holder.",
+                "Mobile app for vendors to upload photos/files",
+                "Seperate dashboard for each vendor",
+              ].map((item) => (
                 <div key={item} className="flex items-center">
                   <DoneIcon className="mr-4" color="primary" />
-                  <p className="my-2 max-w-400">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing
-                  </p>
+                  <p className="my-2 max-w-400">{item}</p>
                 </div>
               ))}
             </div>
@@ -103,14 +106,14 @@ const Features = () => {
               )}
             >
               <div className="icon-wrapper my-4">
-                <ProcessorIcon color="primary" className="text-72" />
+                <PhoneAndroidIcon color="primary" className="text-72" />
               </div>
               <div className="max-w-400">
-                <h4 className="mt-0 mb-4 font-medium">2.0GHz 8Core x64</h4>
+                <h4 className="mt-0 mb-4 font-medium">Mobile App</h4>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua.
+                  We have also mobile apps on both andorid and apple store for
+                  vendors. Which help alot to vendors when they have to upload
+                  photos/files about specific property.
                 </p>
               </div>
             </Card>
@@ -122,14 +125,15 @@ const Features = () => {
               )}
             >
               <div className="icon-wrapper my-4">
-                <SpeedIcon color="primary" className="text-72" />
+                <DashboardIcon color="primary" className="text-72" />
               </div>
               <div className="max-w-400">
-                <h4 className="mt-0 mb-4 font-medium">1600bs Speed</h4>
+                <h4 className="mt-0 mb-4 font-medium">Personal Dashboard</h4>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua.
+                  Each vendor has it's own dashboard which is different from
+                  main user and limited access. Vendor can upload photos/files
+                  about properties and can perform only limited actions on this
+                  property.
                 </p>
               </div>
             </Card>

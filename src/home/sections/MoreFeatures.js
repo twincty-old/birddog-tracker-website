@@ -1,10 +1,10 @@
 import React from "react";
-import { Grid, Icon, Card } from "@material-ui/core";
+import { Grid, Card } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import { SdCard } from "@material-ui/icons";
-import RAMIcon from "../common/icons/RAMIcon";
 import DoneIcon from "@material-ui/icons/Done";
+import SpeedIcon from "../common/icons/SpeedIcon";
 
 const tubeStyle = {
   height: 64,
@@ -74,15 +74,16 @@ const MoreFeatures = () => {
               )}
             >
               <div className="max-w-400">
-                <h4 className="mt-0 mb-4 font-medium">16GB RAM</h4>
+                <h4 className="mt-0 mb-4 font-medium">Speed Site</h4>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua.
+                  Site dashboard is designed on very high tech which is very
+                  fast even it work on low internet. So you don't have to worry
+                  about site speed when you and your vendors working in
+                  dashboard panel.
                 </p>
               </div>
               <div className="icon-wrapper my-4">
-                <RAMIcon color="primary" className="text-72" />
+                <SpeedIcon color="primary" className="text-72" />
               </div>
             </Card>
             <Card
@@ -93,11 +94,11 @@ const MoreFeatures = () => {
               )}
             >
               <div className="max-w-400">
-                <h4 className="mt-0 mb-4 font-medium">500GB MicroSD</h4>
+                <h4 className="mt-0 mb-4 font-medium">Disk Space</h4>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua.
+                  Mostly vendors need to upload photos about specific properties
+                  which you assign to them. There is no space limit. Vendors can
+                  upload unlimited number of photos/files.
                 </p>
               </div>
               <div className="icon-wrapper my-4">
@@ -111,7 +112,7 @@ const MoreFeatures = () => {
               <div className="max-w-400">
                 <div className="flex items-center">
                   <h1 className="font-normal text-48 m-0 relative inline-bock text-primary">
-                    Best Memory
+                    Best Features
                   </h1>
                   <div className="flex ml--4">
                     <div className={classes.tube1}></div>
@@ -121,17 +122,19 @@ const MoreFeatures = () => {
                 </div>
 
                 <p className="my-10 max-w-400">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua.
+                  Birddog tracker provide you best user experenice while working
+                  on your properties or with your vendors. Allow unlimited
+                  vendors for free. No disk space limit.
                 </p>
                 <div>
-                  {[1, 2, 3].map((item) => (
+                  {[
+                    "Unlimited disk space to upload photos/files",
+                    "Speed site which work well with slow internet",
+                    "Map to view your birddog properties",
+                  ].map((item) => (
                     <div key={item} className="flex items-center">
                       <DoneIcon className="mr-4" color="primary" />
-                      <p className="my-2 max-w-400">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing
-                      </p>
+                      <p className="my-2 max-w-400">{item}</p>
                     </div>
                   ))}
                 </div>

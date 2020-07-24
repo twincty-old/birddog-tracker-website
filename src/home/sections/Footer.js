@@ -1,12 +1,13 @@
 import React from "react";
-import { Grid, Button, Icon } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import MailIcon from "@material-ui/icons/Mail";
 import RoomIcon from "@material-ui/icons/Room";
 
-const useStyles = makeStyles(({ palette, ...theme }) => ({
+const useStyles = makeStyles(({ palette }) => ({
   footerSection: {
+    background: "#011C3A",
     "& h4:after": {
       content: '" "',
       position: "absolute",
@@ -35,9 +36,6 @@ const Footer = () => {
                 consectetur adipisicing elit consectetur adipisicing elit.
                 Officiis perferendis rem, aut aliquam.
               </p>
-              <Button variant="contained" color="secondary">
-                Contact Us
-              </Button>
             </div>
           </Grid>
           <Grid item lg={3} md={3} sm={12}>
@@ -47,7 +45,9 @@ const Footer = () => {
                 <MailIcon className="text-secondary" />
                 <div className="pl-4">
                   <h5 className="m-0 p-0 text-16">Email</h5>
-                  <p className="m-0 p-0 text-inherit">email@abc.com</p>
+                  <p className="m-0 p-0 text-inherit">
+                    support@birddogtracker.com
+                  </p>
                 </div>
               </div>
               <div className="px-4 mt-8 flex items-center mx--4">

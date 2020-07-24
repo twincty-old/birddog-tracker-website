@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Avatar, Divider, Icon, useMediaQuery } from "@material-ui/core";
+import { Avatar, useMediaQuery } from "@material-ui/core";
 import { makeStyles, lighten, useTheme } from "@material-ui/core/styles";
 import Carousel from "../common/Carousel";
 import TwitterIcon from "../common/icons/TwitterIcon";
@@ -107,7 +107,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className={clsx("section", classes.section)} id="testimonial6">
+    <div className={clsx("section", classes.section)} id="reviews">
       <div className="container text-center">
         <h1 className="font-normal text-44 mt-0 text-white mx-auto mb-16">
           What our customers say

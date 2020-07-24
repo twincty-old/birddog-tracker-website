@@ -55,42 +55,44 @@ const TopBar = (props) => {
         </div>
         <ul className="navigation">
           <li>
-            <NavLink to="/demos">Demos</NavLink>
-          </li>
-          <li>
-            <ScrollTo to="intro6" onScroll={close}>
+            <ScrollTo to="intro" onScroll={close}>
               Home
             </ScrollTo>
           </li>
           <li>
-            <ScrollTo to="services8" onScroll={close}>
-              Works
+            <ScrollTo to="feature" onScroll={close}>
+              Features
             </ScrollTo>
           </li>
           <li>
-            <ScrollTo to="testimonial6" onScroll={close}>
-              Review
+            <ScrollTo to="signup" onScroll={close}>
+              SignUp
             </ScrollTo>
           </li>
           <li>
-            <ScrollTo to="pricing2" onScroll={close}>
-              Service
+            <ScrollTo to="reviews" onScroll={close}>
+              Reviews
             </ScrollTo>
           </li>
           <li>
-            <ScrollTo to="blog1" onScroll={close}>
-              Blog
+            <ScrollTo to="download-app" onScroll={close}>
+              Download
             </ScrollTo>
           </li>
           <li>
-            <ScrollTo to="subscription1" onScroll={close}>
-              Subscribe
+            <ScrollTo to="faqs" onScroll={close}>
+              FAQs
+            </ScrollTo>
+          </li>
+          <li>
+            <ScrollTo to="get-started" onScroll={close}>
+              Get Started
             </ScrollTo>
           </li>
         </ul>
         <div className="m-auto" />
         <div className="navigation flex">
-          <NavLink to="/login" className="mr-1">
+          <NavLink to="/" className="mr-1">
             <Button
               className="box-shadow-none px-8 rounded-l hover-bg-primary capitalize"
               variant="outlined"
@@ -99,7 +101,7 @@ const TopBar = (props) => {
               Login
             </Button>
           </NavLink>
-          <NavLink to="/signup">
+          <NavLink to="/">
             <Button
               className="box-shadow-none px-8 rounded-r hover-bg-primary capitalize"
               variant="outlined"

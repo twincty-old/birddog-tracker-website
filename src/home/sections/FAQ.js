@@ -8,11 +8,11 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 
-const useStyles = makeStyles(({ palette, ...theme }) => ({
+const useStyles = makeStyles({
   bgLightGray: {
     background: "rgba(0,0,0,0.05)",
   },
-}));
+});
 
 const FAQ = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -28,19 +28,16 @@ const FAQ = () => {
     "Support",
     "Privacy",
     "Our Advisor",
-    "NDA Terms",
-    "Support Policy",
   ];
 
   return (
-    <section className="section" id="faq1">
+    <section className="section" id="faqs">
       <div className="container">
         <div className="mb-16 text-center mx-auto">
           <h1 className="mt-0 font-normal text-44 text-primary">FAQs</h1>
           <p className="max-w-400 mx-auto">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
+            Frequently asked question, please check these before you submit new
+            ticket. Chances are get your answer from these questions.
           </p>
         </div>
 

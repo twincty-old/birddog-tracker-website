@@ -1,11 +1,11 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Fab, Icon } from "@material-ui/core";
+import { Fab } from "@material-ui/core";
 import AppleIcon from "../common/icons/TwitterIcon";
 import clsx from "clsx";
 import AndroidOutlinedIcon from "@material-ui/icons/AndroidOutlined";
 
-const useStyles = makeStyles(({ palette, ...theme }) => ({
+const useStyles = makeStyles(({ palette }) => ({
   wrapper: {
     position: "relative",
     "&::after": {
@@ -43,13 +43,14 @@ const CallToAction = () => {
   const classes = useStyles();
 
   return (
-    <section className="section">
+    <section className="section" id="download-app">
       <div className="container">
         <div className={clsx("text-center mx-auto", classes.wrapper)}>
           <h1 className="mt-0 mb-7 font-normal text-44">Download Now !</h1>
           <p className="max-w-400 mx-auto mb-8">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore
+            We have also mobile apps on both andorid and apple store for
+            vendors. Which help alot to vendors when they have to upload
+            photos/files about specific property.
           </p>
           <div className="flex justify-center flex-wrap">
             <Fab className="mr-6 px-6" variant="extended" color="primary">

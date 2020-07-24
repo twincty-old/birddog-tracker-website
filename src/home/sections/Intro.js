@@ -1,19 +1,19 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import Icon from "@material-ui/core/Icon";
 import CheckIcon from "@material-ui/icons/Check";
-import FlightTakeoffIcon from "@material-ui/icons/FlightTakeoff";
 import AlarmOnIcon from "@material-ui/icons/AlarmOn";
 import Fab from "@material-ui/core/Fab";
 import { makeStyles, darken } from "@material-ui/core/styles";
 import clsx from "clsx";
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
+  section: {
+    background: `linear-gradient(45deg, ${palette.primary.main} 0%,${palette.primary.light} 100%)`,
+  },
   introWrapper: {
     padding: "5rem 0px !important",
     overflow: "visible !important",
-    background:
-      "url(./assets/images/home-bg.jpg) center center/cover no-repeat",
+    background: `linear-gradient(45deg, ${palette.primary.main} 0%,${palette.primary.light} 100%)`,
     "& h1, h2, h3, h4, h5, h6": {
       color: "#fff",
     },
@@ -80,13 +80,13 @@ const Intro = () => {
   const classes = useStyles();
 
   return (
-    <section className={clsx("section text-white")} id="intro1">
+    <section className={clsx("section text-white")} id="intro">
       <div className={classes.introWrapper}>
         <div className="container">
           <Grid container spacing={3} justify="center">
             <Grid item md={6}>
               <h1 className={clsx("mb-6 text-48", classes.title)}>
-                Better Management; Less Expense
+                Manage Properties; Better way
               </h1>
               <div className="text-22 mb-10">
                 Not sure about Pro? Try trial first!
@@ -95,15 +95,15 @@ const Intro = () => {
               <div className="mb-10 list">
                 <div className="flex items-center mb-4">
                   <CheckIcon color="secondary" className="mr-2" />
-                  Unlimited Projects.
+                  Unlimited Photo/files upload.
                 </div>
                 <div className="flex items-center mb-4">
                   <CheckIcon color="secondary" className="mr-2" />
-                  Unlimited Team Members.
+                  Unlimited Vendor members.
                 </div>
                 <div className="flex items-center mb-4">
                   <CheckIcon color="secondary" className="mr-2" />
-                  Unlimited Disk Space.
+                  Unlimited properties added.
                 </div>
               </div>
 
@@ -111,35 +111,23 @@ const Intro = () => {
                 <Fab
                   variant="extended"
                   size="large"
-                  color="primary"
-                  aria-label="Buy"
-                  className="px-6 text-18 m-2"
-                >
-                  <FlightTakeoffIcon />
-                  Take off
-                </Fab>
-
-                <Fab
-                  variant="extended"
-                  size="large"
                   aria-label="Download"
                   className={clsx("px-6 text-18 m-2", classes.whiteButton)}
                 >
-                  <AlarmOnIcon />
-                  14 days free trial
+                  <AlarmOnIcon />7 days free trial
                 </Fab>
               </div>
             </Grid>
             <Grid item md={6}>
               <div className={classes.product}>
                 <a
-                  href="https://themeforest.net/user/mh_rafi/portfolio"
+                  href="#"
                   className={classes.productLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="text-32 font-bold">$16</div>
-                  <span className="text-14">Buy On ThemeForest</span>
+                  <div className="text-32 font-bold">$19.97</div>
+                  <span className="text-14">Get started now</span>
                 </a>
                 <img src="./assets/images/landing-intro.png" alt="" />
               </div>
