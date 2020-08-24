@@ -92,7 +92,7 @@ const TopBar = (props) => {
         </ul>
         <div className="m-auto" />
         <div className="navigation flex">
-          <NavLink to="/" className="mr-1">
+          <a href="https://dashboard.birddogtracker.com/" className="mr-1">
             <Button
               className="box-shadow-none px-8 rounded-l hover-bg-primary capitalize"
               variant="outlined"
@@ -100,8 +100,8 @@ const TopBar = (props) => {
             >
               Login
             </Button>
-          </NavLink>
-          <NavLink to="/">
+          </a>
+          <a href="https://dashboard.birddogtracker.com/" className="mr-1">
             <Button
               className="box-shadow-none px-8 rounded-r hover-bg-primary capitalize"
               variant="outlined"
@@ -109,7 +109,7 @@ const TopBar = (props) => {
             >
               Signup
             </Button>
-          </NavLink>
+          </a>
         </div>
         <IconButton
           className="header__toggle"
