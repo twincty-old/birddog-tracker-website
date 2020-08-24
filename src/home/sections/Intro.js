@@ -129,7 +129,10 @@ const Intro = () => {
                   <div className="text-32 font-bold">$19.97</div>
                   <span className="text-14">Get started now</span>
                 </a>
-                <img src="./assets/images/landing-intro.png" alt="" />
+                <img
+                  src="./assets/images/birddog-tracker.png"
+                  alt="Birddog Tracker"
+                />
               </div>
             </Grid>
           </Grid>
