@@ -86,10 +86,10 @@ const Intro = () => {
           <Grid container spacing={3} justify="center">
             <Grid item md={6}>
               <h1 className={clsx("mb-6 text-48", classes.title)}>
-                Manage Properties; Better way
+                Find investment properties a better way
               </h1>
               <div className="text-22 mb-10">
-                Not sure about Pro? Try trial first!
+                Not sure if it's worth $19.97? Try it free!
               </div>
 
               <div className="mb-10 list">
@@ -112,10 +112,14 @@ const Intro = () => {
                   variant="extended"
                   size="large"
                   aria-label="Download"
+                  href="https://dashboard.birddogtracker.com/"
                   className={clsx("px-6 text-18 m-2", classes.whiteButton)}
                 >
                   <AlarmOnIcon />7 days free trial
                 </Fab>
+                <div className="text-22 mb-10">
+                  No credit card needed to get started
+                </div>
               </div>
             </Grid>
             <Grid item md={6}>
@@ -127,7 +131,8 @@ const Intro = () => {
                   rel="noopener noreferrer"
                 >
                   <div className="text-32 font-bold">$19.97</div>
-                  <span className="text-14">Get started now</span>
+                  <span className="text-14">per month</span> <br />
+                  <span className="text-14">Get started now for free</span>
                 </a>
                 <img
                   src="./assets/images/birddog-tracker.png"

@@ -76,7 +76,7 @@ const TopBar = (props) => {
           </li>
           <li>
             <ScrollTo to="download-app" onScroll={close}>
-              Download
+              App
             </ScrollTo>
           </li>
           <li>
@@ -86,7 +86,7 @@ const TopBar = (props) => {
           </li>
           <li>
             <ScrollTo to="get-started" onScroll={close}>
-              Get Started
+              Demo
             </ScrollTo>
           </li>
         </ul>
